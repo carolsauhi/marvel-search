@@ -1,0 +1,30 @@
+{
+  "name": "marvel-search",
+  "version": "1.0.0",
+  "description": "Page for search Marvel's Heroes and show them informations.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "5.0.0",
+    "npm": "4.6.1"
+  },
+  "author": "Carol Sauhi - carol_sauhi@hotmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "http": "0.0.1-security",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

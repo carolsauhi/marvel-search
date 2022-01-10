@@ -36,50 +36,42 @@
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Search for your Marvel Characters.</h2>
-						    <input type="text" ng-model="asyncSelected" placeholder="Search for you character" typeahead="characters for characters in getCharacters($viewValue)" typeahead-loading="loadingCharacters"  typeahead-on-select="selectCharacter($item);asyncSelected=''" class="form-control">
-    						<i ng-show="loadingCharacters" class="glyphicon glyphicon-refresh"></i>
-						</header>
-					</section>
+			<!-- One -->
+			<section id="one">
+				<header class="major">
+					<h2>Search for your Marvel Characters.</h2>
+						<input type="text" ng-model="asyncSelected" placeholder="Search for you character" typeahead="characters for characters in getCharacters($viewValue)" typeahead-loading="loadingCharacters"  typeahead-on-select="selectCharacter($item);asyncSelected=''" class="form-control">
+						<i ng-show="loadingCharacters" class="glyphicon glyphicon-refresh"></i>
+				</header>
+			</section>
 
 				<!-- Two -->
-					<section id="two">
-						<div ng-if="showCharInfo">
-							<div ng-if="char.thumb" class="thumbnail"><img src="{{char.thumb}}"></div>
-							<div class="charName"><h1><strong>{{char.name}}</strong></h1></div>
-							<div class="charDesc">{{char.desc}}</div>
-						  </div>
-					</section>
+			<section id="two">
+				<div ng-if="showCharInfo">
+					<div ng-if="char.thumb" class="thumbnail"><img src="{{char.thumb}}"></div>
+					<div class="charName"><h1><strong>{{char.name}}</strong></h1></div>
+					<div class="charDesc">{{char.desc}}</div>
+					</div>
 
-				<!-- Three -->
-				<section id="three">
-					<div ng-if="showCharInfo">
-						<h1>Comic List</h1>
-						<table>
-						  <thead>
-							<tr>
-							  <th>Title</th>
-							  <th>Cover</th>
-							</tr>
-						  </thead>
-			  
-						  <tbody>
-						  <tr id="tableComics" ng-repeat="char in listComics" on-finish-render="ngRepeatFinished">
-							<td>{{char.name}}</td>
-							<td><img  id="myImg" src="images/comic-book.png" alt="icon comic book"></td>
-						  </tr>
-						</tbody>
-						</table>
-					  </div>
-				</section>				
-
-				<!-- Four -->
-
-
-
+				<div ng-if="showCharInfo">
+					<h1>Comic List</h1>
+					<table>
+						<thead>
+						<tr>
+							<th>Title</th>
+							<th>Cover</th>
+						</tr>
+						</thead>
+			
+						<tbody>
+						<tr id="tableComics" ng-repeat="char in listComics" on-finish-render="ngRepeatFinished">
+						<td>{{char.name}}</td>
+						<td><img  id="myImg" src="images/comic-book.png" alt="icon comic book"></td>
+						</tr>
+					</tbody>
+					</table>
+					</div>
+			</section>
 
 			</div>
 

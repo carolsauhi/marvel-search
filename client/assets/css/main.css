@@ -1985,6 +1985,10 @@ input, select, textarea {
 	}
 
 /* Image */
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
 
 	.image {
 		border-radius: 0.35em;
@@ -2050,9 +2054,7 @@ input, select, textarea {
 
 		.image img {
 			border-radius: 0.35em;
-			display: block;
-			max-width: 100%;
-			width: 500px;		
+			display: block;	
 		}
 
 		.image.left {

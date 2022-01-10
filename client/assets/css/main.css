@@ -2012,6 +2012,7 @@ input, select, textarea {
 
 		.image.thumb {
 			text-align: center;
+			width: 50%;
 		}
 
 			.image.thumb:after {
@@ -2050,6 +2051,8 @@ input, select, textarea {
 		.image img {
 			border-radius: 0.35em;
 			display: block;
+			max-width: 100%;
+			width: 500px;		
 		}
 
 		.image.left {

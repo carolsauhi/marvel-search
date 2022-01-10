@@ -40,8 +40,6 @@
 			<section id="one">
 				<header class="major">
 					<h2>Search for your Marvel Characters.</h2>
-					<div>
-						<div>
 							<input 
 							id="searchField"
 							type="text"
@@ -54,11 +52,8 @@
 							autofocus
 						>
 						<i ng-show="loadingCharacters" class="glyphicon glyphicon-refresh"></i>
-						
-					</div>
-					<div>
-						<button class="btn second" onclick="clearField()" ng-click="clearField()">Clear Result</button>
-					</div>
+						<button class="btn" onclick="clearField()" ng-click="clearField()">Clear Result</button>
+						<!-- <button class="btn btn1" onclick="clearField()" ng-click="clearField()">Clear</button> -->
 				</header>
 			</section>
 

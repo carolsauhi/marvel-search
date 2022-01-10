@@ -2338,55 +2338,24 @@ input, select, textarea {
 /* Button */
 
 /*Button Special*/
-
 .btn {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
+  cursor: hand;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  background-color: #CC0033;
+  color: white;
+  font-weight: 900;
+  border: none;
+  padding: 1em 3em;
+  margin: 2em auto;
+  display: block;  
+/*  transition: background .5s ease-in, transform .5s .25s ease-in-out;*/
+  transition: background .6s ease-in, transform .5s .25s ease-in-out;
 }
-.btn:hover, .btn:focus {
-  color: #fff;
-  outline: 0;
+.btn:hover {
+  background-color: #990033;
+/*  transform: scale(1.2);*/
+  transform: scale(1.2) rotateX(30deg);
 }
-
-.second {
-  border-radius: 3em;
-  border-color: #F0131E;
-  color: #FFFFFF;
-  background-image: -webkit-linear-gradient(left, rgba(204, 0, 51), rgba(204, 0, 51) 5%, #990033 5%, #990033 10%, rgba(204, 0, 51) 10%, rgba(204, 0, 51) 15%, #990033 15%, #990033 20%, rgba(204, 0, 51) 20%, rgba(204, 0, 51) 25%, #990033 25%, #990033 30%, rgba(204, 0, 51) 30%, rgba(204, 0, 51) 35%, #990033 35%, #990033 40%, rgba(204, 0, 51) 40%, rgba(204, 0, 51) 45%, #990033 45%, #990033 50%, rgba(204, 0, 51) 50%, rgba(204, 0, 51) 55%, #990033 55%, #990033 60%, rgba(204, 0, 51) 60%, rgba(204, 0, 51) 65%, #990033 65%, #990033 70%, rgba(204, 0, 51) 70%, rgba(204, 0, 51) 75%, #990033 75%, #990033 80%, rgba(204, 0, 51) 80%, rgba(204, 0, 51) 85%, #990033 85%, #990033 90%, rgba(204, 0, 51) 90%, rgba(204, 0, 51) 95%, #990033 95%, #990033 100%);
-  background-image: linear-gradient(to right, rgba(204, 0, 51), rgba(204, 0, 51) 5%, #990033 5%, #990033 10%, rgba(204, 0, 51) 10%, rgba(204, 0, 51) 15%, #990033 15%, #990033 20%, rgba(204, 0, 51) 20%, rgba(204, 0, 51) 25%, #990033 25%, #990033 30%, rgba(204, 0, 51) 30%, rgba(204, 0, 51) 35%, #990033 35%, #990033 40%, rgba(204, 0, 51) 40%, rgba(204, 0, 51) 45%, #990033 45%, #990033 50%, rgba(204, 0, 51) 50%, rgba(204, 0, 51) 55%, #990033 55%, #990033 60%, rgba(204, 0, 51) 60%, rgba(204, 0, 51) 65%, #990033 65%, #990033 70%, rgba(204, 0, 51) 70%, rgba(204, 0, 51) 75%, #990033 75%, #990033 80%, rgba(204, 0, 51) 80%, rgba(204, 0, 51) 85%, #990033 85%, #990033 90%, rgba(204, 0, 51) 90%, rgba(204, 0, 51) 95%, #990033 95%, #990033 100%);
-  background-position: 0 0;
-  background-size: 100%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
-}
-.second:hover {
-  background-position: 100px;
-}
-
 /*  */
 
 	input[type="submit"],

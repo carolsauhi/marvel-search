@@ -5,7 +5,6 @@ app.controller('MainCtrl', function($scope, $location, $http) {
   $scope.char={};
   $scope.showCharInfo= false;
   $scope.showCharDetails=false;
-  $scope.char.thumb="";
   $scope.modalShown = false
   $scope.listComics = [];
 

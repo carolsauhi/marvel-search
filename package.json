@@ -1,7 +1,7 @@
 {
   "name": "marvel-search",
   "version": "1.0.0",
-  "description": "Page for search Marvel's Heroes and show them informations.",
+  "description": "Page for search Marvel's characters and show them informations.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

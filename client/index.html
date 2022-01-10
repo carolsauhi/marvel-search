@@ -40,7 +40,9 @@
 			<section id="one">
 				<header class="major">
 					<h2>Search for your Marvel Characters.</h2>
-						<input 
+					<div>
+						<div>
+							<input 
 							id="searchField"
 							type="text"
 							ng-model="asyncSelected"
@@ -52,7 +54,11 @@
 							autofocus
 						>
 						<i ng-show="loadingCharacters" class="glyphicon glyphicon-refresh"></i>
-						<button onclick="clearField()" ng-click="clearField()">Clear</button>
+						
+					</div>
+					<div>
+						<button class="btn second" onclick="clearField()" ng-click="clearField()">Clear Result</button>
+					</div>
 				</header>
 			</section>
 
@@ -60,8 +66,8 @@
 			<section id="two" ng-if="showCharInfo">
 				<div>
 					<div ng-if="char.thumb" class="img"><img src="{{char.thumb}}"></div>
-					<div ><h1><strong>{{char.name}}</strong></h1></div>
-					<div >{{char.desc}}</div>
+					<div><h1><strong>{{char.name}}</strong></h1></div>
+					<div>{{char.desc}}</div>
 					</div>
 
 				<div ng-if="showCharInfo">

@@ -40,14 +40,25 @@
 			<section id="one">
 				<header class="major">
 					<h2>Search for your Marvel Characters.</h2>
-						<input type="text" ng-model="asyncSelected" placeholder="Search for you character" typeahead="characters for characters in getCharacters($viewValue)" typeahead-loading="loadingCharacters"  typeahead-on-select="selectCharacter($item);asyncSelected=''" class="form-control">
+						<input 
+							id="searchField"
+							type="text"
+							ng-model="asyncSelected"
+							placeholder="Search for you character"
+							typeahead="characters for characters in getCharacters($viewValue)"
+							typeahead-loading="loadingCharacters" 
+							typeahead-on-select="selectCharacter($item);asyncSelected=''"
+							class="form-control" 
+							autofocus
+						>
 						<i ng-show="loadingCharacters" class="glyphicon glyphicon-refresh"></i>
+						<button onclick="clearField()" ng-click="clearField()">Clear</button>
 				</header>
 			</section>
 
 				<!-- Two -->
-			<section id="two">
-				<div ng-if="showCharInfo">
+			<section id="two" ng-if="showCharInfo">
+				<div>
 					<div ng-if="char.thumb" class="thumbnail"><img src="{{char.thumb}}"></div>
 					<div class="charName"><h1><strong>{{char.name}}</strong></h1></div>
 					<div class="charDesc">{{char.desc}}</div>

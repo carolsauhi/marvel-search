@@ -7,6 +7,8 @@ app.controller('MainCtrl', function($scope, $location, $http) {
   $scope.showCharDetails=false;
   $scope.char.thumb="";
   $scope.modalShown = false
+  $scope.listComics = [];
+
   $scope.getCharacters = function(val) {
         $scope.timeStamp=   "codekey";
         $scope.publicKey=  "5a237863b3cc2061003cbbc4fe20dc06";
@@ -30,6 +32,10 @@ app.controller('MainCtrl', function($scope, $location, $http) {
     });
   };
 
+  $scope.clearField= function (){
+    $scope.showCharInfo= false;
+  }
+
   $scope.selectCharacter=function (item){
     angular.forEach($scope.charInfoArr, function(obj, key){
       if(obj.name===item){
@@ -45,13 +51,9 @@ app.controller('MainCtrl', function($scope, $location, $http) {
          $scope.char.desc= obj.description;
          $scope.char.comics=obj.comics.items;
 
-         $scope.listComics = [];
-
          for (let index = 0; index < $scope.char.comics.length; index++) {
           $scope.listComics.push($scope.char.comics[index]);
          }
-
-        //  console.log($scope.listComics)
 
          $scope.showCharInfo= true;
       }

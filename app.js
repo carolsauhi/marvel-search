@@ -26,6 +26,16 @@ app.use(bodyParser.urlencoded({extended: true}))
   
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
+
+// app.get("/api/tokenMarvel", function(request, response) {
+//     var token={
+//         "timeStamp":process.env.TIME_STAMP,
+//         "mdhash": process.env.MDHASH,
+//         "publicKey":process.env.PUBLIC_KEY
+//     }
+//     console.log(token)
+//     // response.send(token)
+//   })
   
 //---------------------------------------------------------------------------
   
@@ -35,10 +45,6 @@ var port = process.env.PORT || 3000;
 app.listen(port, "0.0.0.0", function() {
 console.log("Listening on Port http://localhost:"+port);
 });
-  
-//start server on the specified port and biding host
-// var port = process.env.APP_PORT || 8000
-// app.listen(port, function() {
-// console.log("To view your app, open this link in your browser: http://localhost:" + port);
-// });
+
+
   

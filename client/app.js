@@ -9,6 +9,11 @@ app.controller('MainCtrl', function($scope, $location, $http) {
   $scope.modalShown = false
   $scope.listComics = [];
 
+
+  // $http.get("/api/tokenMarvel").then(function (response) {
+  //   console.log(response)
+  // })
+
   $scope.getCharacters = function(val) {
         $scope.timeStamp=   "codekey";
         $scope.publicKey=  "5a237863b3cc2061003cbbc4fe20dc06";

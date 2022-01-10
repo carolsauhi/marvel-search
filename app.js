@@ -27,15 +27,14 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-// app.get("/api/tokenMarvel", function(request, response) {
-//     var token={
-//         "timeStamp":process.env.TIME_STAMP,
-//         "mdhash": process.env.MDHASH,
-//         "publicKey":process.env.PUBLIC_KEY
-//     }
-//     console.log(token)
-//     // response.send(token)
-//   })
+app.get("/api/tokenMarvel", function(request, response) {
+    var token={
+        "timeStamp":process.env.TIME_STAMP,
+        "mdhash": process.env.MDHASH,
+        "publicKey":process.env.PUBLIC_KEY
+    }
+    response.send(token)
+  })
   
 //---------------------------------------------------------------------------
   

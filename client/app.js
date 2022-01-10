@@ -10,14 +10,14 @@ app.controller('MainCtrl', function($scope, $location, $http) {
   $scope.listComics = [];
 
 
-  // $http.get("/api/tokenMarvel").then(function (response) {
-  //   console.log(response)
-  // })
+  $http.get("/api/tokenMarvel").then(function (response) {
+    token=response.data
+  })
 
   $scope.getCharacters = function(val) {
-        $scope.timeStamp=   "codekey";
-        $scope.publicKey=  "5a237863b3cc2061003cbbc4fe20dc06";
-        $scope.mdhash= "44f77efb35ecc5e549a07ffbb7cc4063"
+        $scope.timeStamp=   token.timeStamp;
+        $scope.publicKey=  token.publicKey;
+        $scope.mdhash= token.mdhash;
         baseUrl= "https://gateway.marvel.com/v1/public/characters";
     return $http.get(baseUrl, {
       params: {

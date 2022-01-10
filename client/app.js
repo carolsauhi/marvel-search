@@ -18,7 +18,7 @@ app.controller('MainCtrl', function($scope, $location, $http) {
         $scope.timeStamp=   "codekey";
         $scope.publicKey=  "5a237863b3cc2061003cbbc4fe20dc06";
         $scope.mdhash= "44f77efb35ecc5e549a07ffbb7cc4063"
-        baseUrl= "http://gateway.marvel.com/v1/public/characters";
+        baseUrl= "https://gateway.marvel.com/v1/public/characters";
     return $http.get(baseUrl, {
       params: {
         nameStartsWith: val,

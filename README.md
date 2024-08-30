@@ -2,7 +2,7 @@
 
 Page for search Marvel's characters and show them information.
 
-Click [here](https://marvel-search-sauhi.herokuapp.com/) to see the online page.
+Click [here](#) to see the online page.
 
 ## 🚀 Starting
 

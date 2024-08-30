@@ -31,6 +31,7 @@ app.get("/api/tokenMarvel", function(request, response) {
     var token={
         "timeStamp":process.env.TIME_STAMP,
         "mdhash": process.env.MDHASH,
+        "privateKey": process.env.PRIVATE_KEY,
         "publicKey":process.env.PUBLIC_KEY
     }
     response.send(token)

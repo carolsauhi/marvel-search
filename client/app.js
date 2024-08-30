@@ -8,16 +8,15 @@ app.controller('MainCtrl', function($scope, $location, $http) {
   $scope.modalShown = false
   $scope.listComics = [];
 
-
   $http.get("/api/tokenMarvel").then(function (response) {
     token=response.data
   })
 
   $scope.getCharacters = function(val) {
-        $scope.timeStamp=   token.timeStamp;
-        $scope.publicKey=  token.publicKey;
-        $scope.mdhash= token.mdhash;
-        baseUrl= "https://gateway.marvel.com/v1/public/characters";
+    $scope.timeStamp= token.timeStamp;
+    $scope.publicKey=  token.publicKey;
+    $scope.mdhash= token.mdhash;
+    baseUrl= "https://gateway.marvel.com/v1/public/characters";
     return $http.get(baseUrl, {
       params: {
         nameStartsWith: val,
@@ -30,7 +29,6 @@ app.controller('MainCtrl', function($scope, $location, $http) {
       $scope.charInfoArr=response.data.data.results;
       return response.data.data.results.map(function(item){
         $scope.idCharacter=item.id
-        
         return item.name;
       });
     });

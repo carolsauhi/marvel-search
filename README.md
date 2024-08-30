@@ -1,6 +1,6 @@
 # Marvel Characters Search
 
-Page for search Marvel's characters and show them informations.
+Page for search Marvel's characters and show them information.
 
 Click [here](https://marvel-search-sauhi.herokuapp.com/) to see the online page.
 
@@ -26,7 +26,7 @@ Access the terminal in your computer.
 
 Go to the directory where you clone the repository.
 
-Type the follow comand:
+Type the follow command:
 
 ```
 npm install
@@ -62,7 +62,7 @@ You can access local page by http://localhost:3000.
 ## 🛠️ Build
 
 * [Angularjs](https://angularjs.org/) - Framework web
-* [Heroku](https://heroku.com) - Cloud Platform
+* [streamlit](https://share.streamlit.io/) - Cloud Platform
 
 
 ## ✒️ Developer

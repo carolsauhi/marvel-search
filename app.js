@@ -39,7 +39,8 @@ app.get("/api/tokenMarvel", function(request, response) {
   
 //---------------------------------------------------------------------------
   
-app.use(express.static(__dirname + '/client'));
+// app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/'));
 
 var port = process.env.PORT || 3000;
 app.listen(port, "0.0.0.0", function() {

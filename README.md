@@ -1,8 +1,6 @@
 # Marvel Characters Search
 
-Page for search Marvel's characters and show them information.
-
-Click [here](#) to see the online page.
+Page for search Marvel's characters and show them informations
 
 ## 🚀 Starting
 
@@ -62,7 +60,7 @@ You can access local page by http://localhost:3000.
 ## 🛠️ Build
 
 * [Angularjs](https://angularjs.org/) - Framework web
-* [streamlit](https://share.streamlit.io/) - Cloud Platform
+* [Marvel Developer](https://developer.marvel.com/) - Get key to use the Marvel's API.
 
 
 ## ✒️ Developer
